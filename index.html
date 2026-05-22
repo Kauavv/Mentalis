@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>psicologia</title>
+    <title>Espaço Acolher - Saúde Mental e Apoio</title>
+    <!-- Importação de fontes locais ou seguras do sistema. Para usar fontes do Google localmente no deploy, baixe-as e mude o caminho, ou mantenha fontes web seguras como fallback caso exigido estritamente off-line -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="portifolio.html">Diego</a>
+
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="main-header">
+        <div class="container header-flex">
+            <a href="index.html" class="logo" aria-label="Espaço Acolher Home">Espaço <span>Acolher</span></a>
+            <nav class="main-nav" aria-label="Navegação Principal">
+                <a href="index.html" class="active">Início</a>
+                <a href="servicos.html">Áreas de Apoio</a>
+                <a href="caps.html">Guia CAPS</a>
+                <a href="sobre.html" class="btn-nav">Sobre a Equipe</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="hero" aria-label="Boas-vindas">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Um ambiente seguro para desacelerar e encontrar amparo profissional.</h1>
+                    <p>O cuidado com a mente humana exige atenção dedicada. Conectamos você a portais e informações sobre atendimento de nicho e redes públicas integradas de saúde mental.</p>
+                    <div class="hero-actions">
+                        <a href="caps.html" class="btn btn-primary">Buscar Serviço Gratuito</a>
+                        <a href="servicos.html" class="btn btn-secondary">Ver Áreas de Apoio</a>
+                    </div>
+                </div>
+                <div class="hero-image-container" aria-hidden="true">
+                    <div class="hero-shape"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Espaço Acolher - Projeto de Extensão de Saúde Pública e Desenvolvimento Web.</p>
+            <p class="emergency-alert">Atenção: Em caso de crise aguda, entre em contato imediato com o <strong>CVV pelo número 188</strong> (Disponível 24h, gratuito).</p>
+        </div>
+    </footer>
+
 </body>
 </html>
