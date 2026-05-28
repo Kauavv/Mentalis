@@ -13,6 +13,11 @@
     <header class="main-header">
         <div class="container header-flex">
             <a href="index.html" class="logo">Mentalis<span>.</span></a>
+            
+            <!-- Controle do menu mobile sem JavaScript -->
+            <input type="checkbox" id="menu-controle" class="menu-checkbox">
+            <label for="menu-controle" class="menu-toggle" aria-label="Abrir Menu">☰</label>
+            
             <nav class="main-nav" aria-label="Navegação Principal">
                 <a href="index.html" class="nav-link">Início</a>
                 <a href="servicos.html" class="nav-link">Áreas de Apoio</a>
@@ -20,7 +25,6 @@
                 <a href="sobre.html" class="nav-link">Nossa Equipe</a>
                 <a href="emergencia.html" class="btn-nav">Ajuda Imediata</a>
             </nav>
-            <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
         </div>
     </header>
 
@@ -36,25 +40,25 @@
         <section class="section-padding">
             <div class="container caps-interactive-grid">
                 <div class="caps-menu-side">
-                    <h2>Navegação pelo Fluxo do Atendimento</h2>
-                    <p>Clique em cada etapa para ver a documentação necessária e os direitos do paciente na rede pública de saúde mental:</p>
+                    <h2>Fluxo do Atendimento</h2>
+                    <p>Confira a documentação necessária e os direitos do paciente na rede pública de saúde mental:</p>
                     
                     <ul class="interactive-list">
-                        <li class="list-item active" data-target="passo1">
+                        <li class="list-item active">
                             <span class="step-num">01</span>
                             <div>
                                 <strong>Portas Abertas e Acolhimento</strong>
                                 <p>Saiba quem pode ir e como funciona a triagem espontânea.</p>
                             </div>
                         </li>
-                        <li class="list-item" data-target="passo2">
+                        <li class="list-item">
                             <span class="step-num">02</span>
                             <div>
                                 <strong>Documentação Recomendada</strong>
                                 <p>O que você precisa levar para abrir o seu prontuário clínico.</p>
                             </div>
                         </li>
-                        <li class="list-item" data-target="passo3">
+                        <li class="list-item">
                             <span class="step-num">03</span>
                             <div>
                                 <strong>Projeto Terapêutico Singular</strong>
@@ -66,7 +70,12 @@
 
                 <div class="caps-content-side">
                     <div class="display-box" id="caps-display">
-                        <!-- Conteúdo será injetado pelo JavaScript -->
+                        <div class="caps-step-content">
+                            <h3>Informações de Acesso</h3>
+                            <p>O CAPS possui caráter comunitário e de "portas abertas". Isso significa que o acolhimento inicial é feito por demanda espontânea (sem necessidade de encaminhamento prévio).</p>
+                            <p><strong>Documentos Essenciais:</strong> RG/CPF, Cartão do SUS e um comprovante de residência (para vinculação com o território de atendimento).</p>
+                            <p>Após a triagem, a equipe elabora o PTS (Projeto Terapêutico Singular) personalizado para as necessidades do paciente.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,7 +87,7 @@
                 <div class="caps-types-grid">
                     <div class="type-card">
                         <h3>CAPS I e CAPS II</h3>
-                        <p>Atendimento para adults com transtornos mentais graves e persistentes em cidades de pequeno e médio porte.</p>
+                        <p>Atendimento para adultos com transtornos mentais graves e persistentes em cidades de pequeno e médio porte.</p>
                     </div>
                     <div class="type-card">
                         <h3>CAPS III</h3>
@@ -105,19 +114,19 @@
             </div>
             <div>
                 <h3>Links Úteis</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="servicos.html">Áreas de Apoio</a></li>
-                    <li><a href="caps.html">Guia CAPS</a></li>
-                    <li><a href="sobre.html">Nossa Equipe</a></li>
-                </ul>
+                <nav aria-label="Links do Rodapé">
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="servicos.html">Áreas de Apoio</a></li>
+                        <li><a href="caps.html">Guia CAPS</a></li>
+                        <li><a href="sobre.html">Nossa Equipe</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Agência Mentalis. Todos os direitos reservados. Feito com fins educacionais.</p>
         </div>
     </footer>
-
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

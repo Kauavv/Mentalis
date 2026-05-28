@@ -13,6 +13,11 @@
     <header class="main-header">
         <div class="container header-flex">
             <a href="index.html" class="logo">Mentalis<span>.</span></a>
+            
+            <!-- Controle do menu mobile sem JavaScript -->
+            <input type="checkbox" id="menu-controle" class="menu-checkbox">
+            <label for="menu-controle" class="menu-toggle" aria-label="Abrir Menu">☰</label>
+            
             <nav class="main-nav" aria-label="Navegação Principal">
                 <a href="index.html" class="nav-link">Início</a>
                 <a href="servicos.html" class="nav-link">Áreas de Apoio</a>
@@ -20,7 +25,6 @@
                 <a href="sobre.html" class="nav-link active">Nossa Equipe</a>
                 <a href="emergencia.html" class="btn-nav">Ajuda Imediata</a>
             </nav>
-            <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
         </div>
     </header>
 
@@ -37,41 +41,32 @@
             <div class="container">
                 <div class="about-intro-text">
                     <h2>O Manifesto da Agência</h2>
-                    <p>O mercado de trabalho não contrata pessoas apenas para escrever linhas mecânicas de código, mas sim para solucionar dores de pessoas reais. Atuando como uma equipe estruturada de desenvolvimento Front-end, nosso desafio foi mergulhar na complexidade da saúde coletiva e criar um ecossistema digital que alia performance à empatia humana, respeitando de forma rigorosa as diretrizes de acessibilidade digital e design responsivo.</p>
+                    <p>O mercado de trabalho não contrata pessoas apenas para escrever linhas mecânicas de código, mas sim para solucionar dores de pessoas reais. Atuando como uma equipe estruturada de desenvolvimento Front-end, nosso desafio foi mergulhar na complexidade da saúde coletiva e crisis de saúde mental e criar um ecossistema digital que alia performance à empatia humana, respeitando de forma rigorosa as diretrizes de acessibilidade digital e design responsivo.</p>
                 </div>
 
                 <div class="team-cards-grid">
                     
-                    <!-- Seu Perfil -->
                     <article class="team-profile-card">
                         <div class="avatar-wrapper">
                             <div class="avatar-placeholder">SUA FOTO</div>
                         </div>
                         <h3>Diego</h3>
-                        
-                       
                         <a href="porti_diego/index.html" class="btn-saiba-mais">Saiba Mais</a>
                     </article>
 
-                    <!-- Integrante 2 -->
                     <article class="team-profile-card">
                         <div class="avatar-wrapper">
                             <div class="avatar-placeholder">FOTO 2</div>
                         </div>
                         <h3>Kauã</h3>
-                        
-                        
-                          <a href="porti_kaua/index.html" class="btn-saiba-mais">Saiba Mais</a>
+                        <a href="porti_kaua/index.html" class="btn-saiba-mais">Saiba Mais</a>
                     </article>
 
-                    <!-- Integrante 3 -->
                     <article class="team-profile-card">
                         <div class="avatar-wrapper">
                             <div class="avatar-placeholder">FOTO 3</div>
                         </div>
                         <h3>Wenderson</h3>
-                      
-                            
                     </article>
 
                 </div>
@@ -83,23 +78,23 @@
         <div class="container footer-grid">
             <div>
                 <h3>Espaço Acolher</h3>
-                <p>Projeto acadêmico focado em utilidade pública, saúde coletiva e inclusão digital por meio de código acessível.</p>
+                <p>Projeto academicamente focado em utilidade pública, saúde coletiva e inclusão digital por meio de código acessível.</p>
             </div>
             <div>
                 <h3>Links Úteis</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="servicos.html">Áreas de Apoio</a></li>
-                    <li><a href="caps.html">Guia CAPS</a></li>
-                    <li><a href="sobre.html">Nossa Equipe</a></li>
-                </ul>
+                <nav aria-label="Links do Rodapé">
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="servicos.html">Áreas de Apoio</a></li>
+                        <li><a href="caps.html">Guia CAPS</a></li>
+                        <li><a href="sobre.html">Nossa Equipe</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Agência Mentalis. Todos os direitos reservados. Feito com fins educacionais.</p>
         </div>
     </footer>
-
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
