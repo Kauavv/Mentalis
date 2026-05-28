@@ -153,17 +153,6 @@ body {
     align-items: center;
 }
 
-.project-image {
-    flex: 1;
-    min-height: 250px;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-    border: 1px solid #334155;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .placeholder-img {
     color: var(--text-muted);
     font-weight: 500;
