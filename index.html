@@ -95,20 +95,7 @@
     </footer>
 
     <div class="page-glow"></div>
-    <script>
-        const pageGlow = document.querySelector('.page-glow');
-
-        document.addEventListener('mousemove', event => {
-            pageGlow.style.left = `${event.clientX}px`;
-            pageGlow.style.top = `${event.clientY}px`;
-            pageGlow.style.opacity = '1';
-        });
-
-        document.addEventListener('mouseout', event => {
-            if (!event.relatedTarget) {
-                pageGlow.style.opacity = '0';
-            }
-        });
-    </script>
+ 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

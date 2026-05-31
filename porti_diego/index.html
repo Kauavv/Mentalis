@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Diego | Front-end Developer</title>
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
@@ -12,61 +12,95 @@
         <div class="logo">Diego<span class="dot">.</span></div>
         <nav>
             <a href="#sobre">Sobre</a>
-            <a href="#projeto-destaque">Projeto</a>
-            <a href="#contato">Contato</a>
+            <a href="#habilidades">Competências</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato" class="nav-btn">Contato</a>
         </nav>
     </header>
 
-    <section id="sobre" class="hero">
-        <div class="hero-content">
-            <h1>Olá, eu sou o <span class="highlight">Diego</span></h1>
-            <p>Desenvolvedor Front-end com sólida base técnica em HTML5, CSS3, JavaScript e Python. Perfil altamente autodidata, focado em aprendizado contínuo e na resolução criativa de problemas reais através do código. Atua na arquitetura de interfaces modernas, responsivas e acessíveis, unindo design empático à performance técnica.</p>
-            <a href="#projeto-destaque" class="btn-primary">Ver meu trabalho</a>
-        </div>
-    </section>
-
-    <section id="projeto-destaque" class="featured-project">
-        <div class="section-title">
-            <h2>Projeto em Destaque</h2>
-            <div class="line"></div>
-        </div>
-
-        <div class="project-container">
-            <div class="project-image">
-                <div class="placeholder-img">
-                    <img src="aaaaa.png" alt="foto do projeto" height="300">
+    <main>
+        
+        <!-- Hero / Sobre Mim -->
+        <section id="sobre" class="hero">
+            <div class="hero-content">
+                <h1>Construindo interfaces puras e de <span class="highlight">alta performance</span>.</h1>
+                <p>Olá, eu sou o <strong>Diego</strong>. Desenvolvo ecossistemas digitais focados na experiência do usuário, utilizando arquiteturas limpas de HTML5 e CSS3. Meu objetivo é unir estética e código semântico para resolver problemas reais.</p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn-secondary">Contato</a>
                 </div>
             </div>
-            
-            <div class="project-info">
-                <h3>Mentalis</h3>
-                <p class="project-description">
-                    Um portal de saúde mental que conecta usuários a serviços públicos e privados, com foco em acessibilidade e usabilidade. Desenvolvido como parte de um projeto de extensão universitária, o site oferece informações claras sobre redes de apoio, áreas de atendimento e guias práticos para acesso a serviços gratuitos.
-                </p>
-                
-                <div class="tech-tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    
-                </div>
+        </section>
 
-                <div class="project-buttons">
-                    <a href="../index.html" class="btn-primary" target="_blank">Visualizar Site</a>
-                    <a href="https://github.com/konatinho/Projeto_Angelo" class="btn-secondary" target="_blank">Código no GitHub</a>
+        <!-- Competências Diretas -->
+        <section id="habilidades" class="skills-section alt-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Competências</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Arquitetura Front-end</h3>
+                        <p>Criação de layouts modulares usando HTML5 estruturado e estilização avançada via CSS Custom Properties.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>UI / UX Design</h3>
+                        <p>Desenvolvimento de interfaces responsivas, fluidas para mobile e com forte hierarquia visual.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Código Semântico</h3>
+                        <p>Foco em acessibilidade digital e performance, garantindo carregamento rápido e sem dependências infladas.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Projeto em Destaque -->
+        <section id="projetos" class="featured-project">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projeto em Destaque</h2>
+                </div>
+
+                <div class="project-container">
+                    <div class="project-info">
+                        <span class="project-category">Desenvolvimento Web / UI & UX</span>
+                        <h3>Mentalis</h3>
+                        <p class="project-description">
+                            Plataforma digital desenvolvida para conectar a população aos serviços de saúde mental da rede pública. O projeto prioriza uma navegação intuitiva, design altamente inclusivo e uma estrutura robusta de folhas de estilo puras.
+                        </p>
+                        
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>UI/UX</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="../index.html" class="btn-primary" target="_blank">Visualizar Projeto</a>
+                            <a href="https://github.com/konatinho/Projeto_Angelo" class="btn-secondary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé simplificado -->
     <footer id="contato" class="contact">
-        <h2>Vamos construir algo juntos?</h2>
-        <p>Estou disponível para novos projetos e oportunidades.</p>
-        <div class="links">
+        <div class="contact-container">
+            <h2>Vamos conversar?</h2>
+            <p>Estou disponível para novos projetos e colaborações no desenvolvimento de produtos digitais.</p>
             
-            <a href="https://github.com/konatinho" target="_blank">GitHub</a>
-            <a href="mailto:diegopb0307@gmail.com">E-mail</a>
+            <a href="mailto:diegopb0307@gmail.com" class="contact-btn">diegopb0307@gmail.com</a>
+
+            <div class="social-links">
+                <a href="https://github.com/konatinho" target="_blank">GitHub</a>
+            </div>
+            
+            <p class="credits">&copy; 2026 Diego. Todos os direitos reservados.</p>
         </div>
-    </footer>       
+    </footer>
 
 </body>
 </html>

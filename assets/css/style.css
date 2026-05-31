@@ -185,7 +185,7 @@ body {
     }
 
     .menu-checkbox:checked ~ .menu-toggle::before {
-        content: "✕";
+        content: "";
     }
     .menu-checkbox:checked ~ .menu-toggle {
         font-size: 1.6rem;
