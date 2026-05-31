@@ -31,6 +31,23 @@ body {
     overflow-x: hidden;
 }
 
+.page-glow {
+    pointer-events: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 280px;
+    height: 280px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(18, 53, 27, 0.072), rgba(29, 76, 39, 0.263) 30%, transparent 72%);
+    filter: blur(32px);
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.2s ease;
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
 .container {
     width: 90%;
     max-width: 1140px;
@@ -415,6 +432,8 @@ body {
 @media (min-width: 768px) { .team-cards-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } }
 
 .team-profile-card {
+    position: relative;
+    overflow: hidden;
     background: var(--bg-alt);
     border: 1px solid var(--border-glass);
     border-radius: 16px;
@@ -425,16 +444,29 @@ body {
 }
 .team-profile-card:hover { transform: translateY(-5px); }
 
+..team-profile-card .glow {
+    display: none;
+}
+
 .avatar-wrapper {
     width: 110px;
     height: 110px;
     margin: 0 auto 20px auto;
     border-radius: 50%;
+    overflow: hidden;
     background: linear-gradient(45deg, var(--bg-main), var(--primary));
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid var(--secondary);
+}
+    
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 .avatar-placeholder { font-size: 0.8rem; font-weight: bold; color: var(--text-muted); }
 
